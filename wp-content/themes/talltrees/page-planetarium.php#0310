@@ -1,0 +1,128 @@
+<?php
+/** Template Name: プラネタリウム
+*/
+
+$theme_path = get_stylesheet_directory_uri(); //テーマパス
+$blog_path  = get_bloginfo("url"); //ブログURL
+$page_url   = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; //現在のURL
+
+get_header();
+get_template_part( 'content-topicpath_title', get_post_format() );
+
+$date_target 	= 'Y/n/j';		// もとのフォーマット
+$date_format 	= 'Y年n月j日';	// 取得フォーマット
+$year_format 	= 'Y';				// 年だけ取得
+$month_format 	= 'n';			// 月だけ取得
+$today = date_i18n('Y/n/j G:i');	// 今日の日付
+
+// 各館TOPの情報を取得
+$hall_slug = $post->post_name;		// 各館TOP スラッグ
+if(is_parent_slug()){
+	$hall_slug = is_parent_slug();	// 小ページの場合
+}
+$this_page_id = get_id_by_slug($hall_slug);				// 各館TOP ID
+$this_page_link = get_permalink($this_page_id);		// 各館TOP リンク
+$hall_image_path = $theme_path.'/images/'.$hall_slug;	// 各館TOP イメージパス
+?>
+
+
+<div class="content_inner clearfix hall_page page_<?php echo $post->post_name;?>">
+<div class="primary">
+<div class="right_column">
+<arricle>
+<h1 class="plane"><img src="<?php echo $theme_path;?>/images/sogobunka/img-planeta-top.jpg" alt="久喜総合文化施設 プラネタリウム"></h1>
+
+<div class="column_2 clearfix planetaList">
+<section class="column_2_inner">
+  <div class="titleArea clearfix">
+    <div class="title">
+      <h2>投映プログラム</h2>
+      <p>星空解説と毎月替わるテーマでお送りする生解説番組でやさしく楽しく皆様を星空へご案内いたします。</p>
+    </div><!-- /.title -->
+
+		<div class="icon">
+      <img src="<?php echo $theme_path;?>/images/sogobunka/img-planeta-program.jpg" alt="投映プログラム">
+    </div><!-- /.icon -->
+  </div><!-- /.titleArea -->
+
+	<ul class="event_list clearfix sort_list">
+	  <li class="clearfix">
+	  <div class="detail">
+	    <span class="tag tag-program">投映プログラム</span>
+	    <span class="date">2016/02/01</span>
+	    <h3><a href="">２月の投映プログラム「カノープス～見ると長生きできる星～」</a></h3>
+	  </div>
+		<div class="thumb"><a href="">
+	  <img src="<?php echo $theme_path;?>/images/sogobunka/thumb-pla-01.jpg" alt=""></a>
+	  </div>
+	  </li>
+	</ul>
+</section><!-- /.column_2_inner -->
+
+<section class="column_2_inner">
+  <div class="titleArea clearfix">
+    <div class="title">
+      <h2>イベント情報</h2>
+      <p>天体観望会や天文教室など様々なイベントを開催しています。<br><br></p>
+    </div><!-- /.title -->
+
+		<div class="icon">
+      <img src="<?php echo $theme_path;?>/images/sogobunka/img-planeta-star.jpg" alt="イベント情報">
+    </div><!-- /.icon -->
+  </div><!-- /.titleArea -->
+
+	<ul class="event_list clearfix sort_list">
+	  <li class="clearfix">
+	  <div class="detail">
+	    <span class="tag tag-event">イベント</span>
+	    <span class="date">2016/02/01</span>
+	    <h3><a href="">天体観望会のおしらせ</a></h3>
+	  </div>
+		<div class="thumb"><a href="">
+	  <img src="<?php echo $theme_path;?>/images/sogobunka/thumb-pla-02.jpg" alt=""></a>
+	  </div>
+	  </li>
+		<li class="clearfix">
+	  <div class="detail">
+	    <span class="tag tag-event">イベント</span>
+	    <span class="date">2016/02/01</span>
+	    <h3><a href="">天体観望会のおしらせ</a></h3>
+	  </div>
+		<div class="thumb"><a href="">
+	  <img src="<?php echo $theme_path;?>/images/sogobunka/thumb-pla-02.jpg" alt=""></a>
+	  </div>
+	  </li>
+	</ul>
+</section><!-- /.column_2_inner -->
+</div>
+<!-- /.column_2 -->
+
+<div class="titleArea clearfix stumpCard">
+	<div class="title">
+		<h2>プラネタリウムこどもスタンプカードできました！</h2>
+		<p>一般投映をご覧のお子さま（3歳以上中学生以下）に、スタンプカードをさしあげています。</p>
+		<ul>
+			<li><span>■</span>プラネタリウムを一回見ると、スタンプをひとつもらえます。</li>
+			<li><span>■</span>スタンプを5つあつめると、すてきな景品がもらえるよ！</li>
+		</ul>
+	</div><!-- /.title -->
+
+	<div class="icon">
+		<img src="<?php echo $theme_path;?>/images/sogobunka/img-planeta-card.jpg" alt="こどもスタンプカード">
+	</div><!-- /.icon -->
+
+</div><!-- /.titleArea -->
+
+</arricle>
+</div><!-- /right_column -->
+</div>
+<!-- /.primary -->
+
+<div class="secondary">
+<?php get_sidebar('hall');?>
+</div>
+<!-- /.secondary -->
+
+</div>
+<!-- /content_inner -->
+<?php get_footer(); ?>

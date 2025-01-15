@@ -1,0 +1,99 @@
+<?php
+/**
+Template Name: 各ホール
+*/
+
+$theme_path = get_stylesheet_directory_uri(); //テーマパス
+$blog_path  = get_bloginfo("url"); //ブログURL
+$page_url   = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; //現在のURL
+
+get_header();
+get_template_part( 'content-topicpath_title', get_post_format() );
+
+$date_target 	= 'Y/n/j';		// もとのフォーマット
+$date_format 	= 'Y年n月j日';	// 取得フォーマット
+$year_format 	= 'Y';				// 年だけ取得
+$month_format 	= 'n';			// 月だけ取得
+$today = date_i18n('Y/n/j G:i');	// 今日の日付
+set_query_var( 'date_target', $date_target );
+set_query_var( 'date_format', $date_format );
+set_query_var( 'year_format', $year_format );
+set_query_var( 'month_format', $month_format );
+set_query_var( 'today', $today );
+
+// 各館TOPの情報を取得
+$hall_slug = $post->post_name;		// 各館TOP スラッグ
+if(is_parent_slug()) $hall_slug = is_parent_slug();	// 小ページの場合
+$this_page_id = get_id_by_slug($hall_slug);	// 各館TOP ID
+$this_page_link = get_permalink($this_page_id);	// 各館TOP リンク
+$hall_image_path = $theme_path.'/images/'.$hall_slug;	// 各館TOP イメージパス
+set_query_var( 'hall_slug', $hall_slug );
+set_query_var( 'this_page_id', $this_page_id );
+set_query_var( 'this_page_link', $this_page_link );
+set_query_var( 'hall_image_path', $hall_image_path );
+
+// 施設利用受付
+$yoyaku_hall_array = '';
+$yoyaku_other_array = '';
+$yoyaku_hall_array = get_field('yoyaku_hall',$this_page_id);	// ホール・展示室
+$yoyaku_other_array = get_field('yoyaku_other',$this_page_id);	// その他
+set_query_var( 'yoyaku_hall_array', $yoyaku_hall_array );
+set_query_var( 'yoyaku_other_array', $yoyaku_other_array );
+
+?>
+
+
+<div class="content_inner clearfix hall_page">
+	<div class="primary">
+	<div class="right_column">
+	<?php
+
+	// 各館トップページ
+	// --------------------------------------------------------------------------------
+	if(!is_parent_slug()){
+	?>
+	<article>
+		<div class="leading_img">
+			<p id="slideshow">
+				<img src="<?php echo $hall_image_path;?>/index/01.png" alt="" class="active">
+				<img src="<?php echo $hall_image_path;?>/index/02.png" alt="">
+				<img src="<?php echo $hall_image_path;?>/index/03.png" alt="">
+				<img src="<?php echo $hall_image_path;?>/index/04.png" alt="">
+			</p>
+		</div>
+		<?php
+			get_template_part('content', 'halltop');
+		?>
+
+	</article>
+	<?php
+	// 施設利用受付ページ
+	// --------------------------------------------------------------------------------
+	}else if(is_page('reservation')){
+
+		get_template_part('content', 'reservation');
+
+	// 各館の下階層ページ
+	// ----------------------------------------
+	}else{
+		while ( have_posts() ) : the_post();
+			the_content();
+		endwhile;
+		wp_reset_query();
+	}
+ 	?>
+
+	</div><!-- /right_column -->
+	</div>
+	<!-- /.primary -->
+
+	<div class="secondary">
+		<?php get_sidebar('hall');?>
+	</div>
+	<!-- /.secondary -->
+
+	</div><!-- /content_inner -->
+
+
+
+<?php get_footer(); ?>

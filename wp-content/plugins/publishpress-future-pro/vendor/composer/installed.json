@@ -1,0 +1,50 @@
+{
+    "packages": [
+        {
+            "name": "publishpress/publishpress-future",
+            "version": "dev-3.1.0-alias-plugin",
+            "version_normalized": "dev-3.1.0-alias-plugin",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/publishpress/PublishPress-Future.git",
+                "reference": "c1a3ebe35f40bab0332182e18db11e3a37f80b56"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/publishpress/PublishPress-Future/zipball/c1a3ebe35f40bab0332182e18db11e3a37f80b56",
+                "reference": "c1a3ebe35f40bab0332182e18db11e3a37f80b56",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5"
+            },
+            "time": "2023-08-02T19:02:36+00:00",
+            "type": "wordpress-plugin",
+            "extra": {
+                "plugin-slug": "post-expirator",
+                "plugin-name": "publishpress-future",
+                "plugin-folder": "post-expirator"
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "PublishPress",
+                    "email": "help@publishpress.com"
+                }
+            ],
+            "description": "Deprecated plugin code. Will be removed soon.",
+            "homepage": "https://publishpress.com/",
+            "support": {
+                "issues": "https://github.com/publishpress/PublishPress-Future/issues",
+                "source": "https://github.com/publishpress/PublishPress-Future/tree/3.1.0-alias-plugin"
+            },
+            "install-path": "../publishpress/publishpress-future"
+        }
+    ],
+    "dev": false,
+    "dev-package-names": []
+}

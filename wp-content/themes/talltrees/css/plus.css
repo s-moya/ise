@@ -1,0 +1,361 @@
+﻿/* 外部サイトマーク調整 */
+.free_area .external_link {
+	display: inline-block;
+}
+.free_area .external_link:after {
+	top: 8px!important;
+}
+.free_area .external_link:before {
+	top: 6px;
+}
+@media screen and (max-width: 767px) {
+	.free_area .arrow_simple.external_link:after {
+		top: 50%!important;
+	}
+}
+
+/* タブ edge対策 */
+@media screen and(min-width: 768px) {
+	.page_calendar .main_tabs li:last-child {
+		float: right
+	}
+}
+.page_calendar .tab_count_2 li {
+	width: calc((100% - 14px * 1 - 1px) / 2);
+	margin-right: 14px
+}
+.page_calendar .tab_count_3 li {
+	width: calc((100% - 14px * 2 - 1px) / 3);
+	margin-right: 14px
+}
+.page_calendar .tab_count_4 li {
+	width: calc((100% - 14px * 3 - 1px) / 4);
+	margin-right: 14px
+}
+.page_calendar .tab_count_5 li {
+	width: calc((100% - 14px * 4 - 1px) / 5);
+	margin-right: 14px
+}
+.page_calendar .tab_count_6 li {
+	width: calc((100% - 14px * 5 - 1px) / 6);
+	margin-right: 14px
+}
+.page_calendar .tab_count_7 li {
+	width: calc((100% - 14px * 6 - 1px) / 7);
+	margin-right: 14px
+}
+
+/* snsLinks */
+div.snsLinks li a.line{background:#00b833}
+div.snsLinks li a.line:hover{background:#00b833}
+div.snsLinks li a.line span{padding-left:26px;background:url('../images/common/icn-line.png?1519272954') left center no-repeat}
+
+@media screen and (max-width: 767px) {
+	div.snsLinks li a.line{padding:7px 7px 7px 5px;background:#00b833}
+	div.snsLinks li a.line:hover{background:#00b833}
+	div.snsLinks li a.line span{padding-left:20px;background:url('../images/common/sp/icn-line.png?1519272956') left center no-repeat;background-size:auto 13.5px}
+	}
+
+/* サイトロゴ */
+.siteLogo_sp{padding-top:3px;float:left}
+.siteLogo_sp a{display:block;width:492px;height:40px;text-indent:-9999px;background:url('../images/common/logo_sp.jpg?1552379960') left top no-repeat}
+.siteLogo_sp{padding-top:0;float:left}
+.siteLogo_sp a{width:319.8px;height:26px;background-position:bottom left;background-size:97% auto}
+.spNav .siteLogo_sp a{width:319.8px;height:26px;background:url('../images/common/logo_sp.jpg?1552379960') bottom left no-repeat;background-size:97% auto}
+
+/* 休館日の枠 */
+.closedDays p{
+	padding:0 20px 0 20px;
+	font-size:1.2rem;
+	line-height:1.7
+	}
+
+/* PCのみ */
+@media screen and (max-width: 767px) {
+    .pc-only { display:none; }
+	}
+
+/* SPのみ */
+@media screen and (min-width: 767px) {
+    .sp-only { display:none; }
+	}
+
+/* 丸リストマージン調整 */
+ul.link_list_mark2{margin-bottom:-1em;margin-top:-2em;}
+ul.link_list_mark2 li{line-height:1.8;margin-bottom:5px}
+ul.link_list_mark2 li{padding-left:12px;background:url(../images/icon_list.png) no-repeat left 9px}
+
+/*チケット購入ページ*/
+ul.ticket_list_red{
+	margin-bottom:0px;
+	color:#990000;
+	}
+
+ul.ticket_list_red li{
+  	padding-left: 1em;
+  	text-indent: -1em;
+  	line-height:1.8;
+	margin-bottom:5px;
+	}
+
+ul.ticket_list_red li:before {
+    content: "＊";
+    }
+
+/* 注意リスト */
+ul.caution_list {
+	margin-bottom:0px;
+	}
+ul.caution_list li {
+  	padding-left:1em;
+  	text-indent:-1em;
+  	line-height:1.5;
+	margin-bottom:5px;
+	}
+ul.caution_list li:before {
+	content:"※";
+	}
+
+/* 注意リスト赤字 */
+ul.caution_list_red {
+	margin-bottom:0px;
+	color:#cc0000;
+	}
+ul.caution_list_red li {
+  	padding-left:1em;
+  	text-indent:-1em;
+  	line-height:1.5em;
+	margin-bottom:5px;
+	}
+ul.caution_list_red li:before {
+	content:"※";
+	}
+
+/* 1.5字下げ */
+ul.free_list {
+	margin-bottom:0px;
+	}
+ul.free_list li {
+  	padding-left:1.5em;
+  	text-indent:-1.5em;
+  	line-height:1.5;
+	margin-bottom:5px;
+	}
+
+/* 括弧リスト1桁のみ */
+ul.brackets_list {
+	margin-bottom:20px;
+	padding-left:0.7em;
+	counter-reset:number 0;
+	}
+ul.brackets_list li {
+  	padding-left:2em;
+  	text-indent:-2.7em;
+	margin-bottom:5px;
+	}
+ul.brackets_list li:before {
+	counter-increment:number 1;
+	content:"（"counter(number)"）";
+	}
+
+/* 括弧リスト2桁 */
+ul.brackets_list_1d {
+	margin-bottom:0em;
+	padding-left:0.7em;
+	counter-reset:number 0;
+	}
+ul.brackets_list_1d li {
+  	padding-left:2.5em;
+  	text-indent:-2.6em;
+	margin-bottom:0.5em;
+	}
+ul.brackets_list_1d li:before {
+	counter-increment:number 1;
+	content:"（"counter(number)"）";
+	}
+ul.brackets_list_2d {
+	margin-bottom:20px;
+	padding-left:0.7em;
+	counter-reset:number 9;
+	}
+ul.brackets_list_2d li {
+  	padding-left:2.5em;
+  	text-indent:-3.2em;
+	margin-bottom:0.5em;
+	}
+ul.brackets_list_2d li:before {
+	counter-increment:number 1;
+	content:"（"counter(number)"）";
+	}
+
+/* 括弧リスト右側のみ */
+ul.bracket_list {
+	margin-bottom:20px;
+	padding-left:0.6em;
+	counter-reset:number 0;
+	}
+ul.bracket_list li {
+  	padding-left:1em;
+  	text-indent:-1.6em;
+	margin-bottom:5px;
+	}
+ul.bracket_list li:before {
+	counter-increment:number 1;
+	content:""counter(number)"）";
+	}
+
+/* PDFリンク */
+a.pdf-link{
+	display:inline-block;
+	position:relative;
+	padding-right:35px;
+	transition:.25s ease-out
+	}
+a.pdf-link:before{
+	content:"";
+	position:absolute;
+	top:5px;
+	right:0px;
+	display:block;
+	width:32px;
+	height:14px
+	}
+a.pdf-link:hover{
+	opacity:0.8
+	}
+a.pdf-link:before{
+	background:url(../../../../src/ico/ico-pdf.svg) no-repeat
+	}
+
+/* Wordリンク */
+a.doc-link{
+	display:inline-block;
+	position:relative;
+	padding-right:35px;
+	transition:.25s ease-out
+	}
+a.doc-link:before{
+	content:"";
+	position:absolute;
+	top:5px;
+	right:0px;
+	display:block;
+	width:32px;
+	height:14px
+	}
+a.doc-link:hover{
+	opacity:0.8
+	}
+a.doc-link:before{
+	background:url(../../../../src/ico/ico-word.svg) no-repeat
+	}
+
+/* Excelリンク */
+a.xls-link{
+	display:inline-block;
+	position:relative;
+	padding-right:35px;
+	transition:.25s ease-out
+	}
+a.xls-link:before{
+	content:"";
+	position:absolute;
+	top:5px;
+	right:0px;
+	display:block;
+	width:32px;
+	height:14px
+	}
+a.xls-link:hover{
+	opacity:0.8
+	}
+a.xls-link:before{
+	background:url(../../../../src/ico/ico-excel.svg) no-repeat
+	}
+
+/* テーブルにPDF・Word・Excelリンクを付ける場合 */
+a.tb:before{
+	content:"";
+	position:absolute;
+	top:2px;
+	right:0px;
+	display:block;
+	width:32px;
+	height:14px
+	}
+
+/* 座席からの見え方 */
+.seat_ise {
+	position:relative;
+	width:590px;
+	margin:0 auto
+	}
+.seat_ise .ico {
+	position:absolute;
+	display:block;
+	top:0;left:0;
+	width:41px;
+	height:41px
+	}
+.seat_ise .ico a {
+	text-indent:-9999px;
+	display:block;
+	height:100%;
+	background:url("../images/ico_camera.png") center center no-repeat
+	}
+.seat_ise .ico img {
+	max-width:100%
+	}
+.seat_ise_b .ico_01 {top:100px;left:100px}
+.seat_ise_b .ico_02 {top:100px;left:300px}
+.seat_ise_b .ico_03 {top:180px;left:182px}
+.seat_ise_b .ico_04 {top:180px;left:358px}
+.seat_ise_b .ico_05 {top:250px;left:65px}
+.seat_ise_b .ico_06 {top:250px;left:300px}
+.seat_ise_b .ico_07 {top:250px;left:474px}
+.seat_ise_b .ico_08 {top:350px;left:280px}
+.seat_ise_b .ico_09 {top:450px;left:182px}
+.seat_ise_b .ico_10 {top:450px;left:358px}
+.seat_ise_b .ico_11 {top:500px;left:65px}
+.seat_ise_b .ico_12 {top:500px;left:270px}
+.seat_ise_b .ico_13 {top:500px;left:474px}
+
+/* テーブル表示 */
+@media screen and (max-width: 767px) {
+	.gray{background-color:#f7f5f5 !important
+	}
+
+.page_module table td{overflow:hidden;*zoom:1}
+.page_module .table_item .contentTd{float:left;width:100%}
+.page_module .midashiTh{float:left}
+.page_module .table_2 .contentTd{float:right;font-weight:bold}
+
+.page_subscribe table td{overflow:hidden;*zoom:1}
+.page_subscribe .table_item .contentTd{float:left;width:100%}
+.page_subscribe .midashiTh{float:left}
+.page_subscribe .table_2 .contentTd{float:right;font-weight:bold}
+
+.page_vacant table td{overflow:hidden;*zoom:1}
+.page_vacant .table_item .contentTd{float:left;width:100%}
+.page_vacant .midashiTh{float:left}
+.page_vacant .table_2 .contentTd{float:right;font-weight:bold}
+
+.page_download table td{overflow:hidden;*zoom:1}
+.page_download .table_item .contentTd{float:left;width:100%}
+.page_download .midashiTh{float:left}
+.page_download .table_2 .contentTd{float:right;font-weight:bold}
+
+.page_access table td{overflow:hidden;*zoom:1}
+.page_access .table_item .contentTd{float:left;width:100%}
+.page_access .midashiTh{float:left}
+.page_access .table_2 .contentTd{float:right;font-weight:bold}
+
+.page_price_new table td{overflow:hidden;*zoom:1}
+.page_price_new .table_item .contentTd{float:left;width:100%}
+.page_price_new .midashiTh{float:left}
+.page_price_new .table_2 .contentTd{float:right;font-weight:bold}
+
+.page_price_option_new table td{overflow:hidden;*zoom:1}
+.page_price_option_new .table_item .contentTd{float:left;width:100%}
+.page_price_option_new .midashiTh{float:left}
+.page_price_option_new .table_2 .contentTd{float:right;font-weight:bold}

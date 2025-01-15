@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+/* =======================================
+  artist.css
+======================================= */
+/* --------------------------------------------------------
+   h3
+-------------------------------------------------------- */
+#artist h3 {
+    width: 710px;
+	height: 33px;
+	margin: 0 auto 10px auto;
+    padding: 12px 0 0 10px;
+    overflow: hidden;
+    _zoom: 1;
+	background: url(../images/_share/title_bg.jpg) no-repeat;
+}
+
+#artist .box {
+    width: 710px;
+	margin: 0 auto 10px auto;
+	padding: 0 0 20px 0;
+    overflow: hidden;
+    _zoom: 1;
+}
+#artist .box p {
+    padding: 0 10px;
+    overflow: hidden;
+    _zoom: 1;
+}
+#artist .midashi {
+	background: #E8F5E6;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 3px 5px 3px 10px;
+	margin: 0 0 12px 0;
+}
+#artist .midashi2 {
+	font-weight: bold;
+	padding: 0 0 0 8px;
+	margin: 0 0 3px 0;
+}
+#artist .btn {
+    width: 500px;
+	padding: 10px;
+    overflow: hidden;
+    _zoom: 1;
+}
+#artist .att {
+	font-size: 85%;
+	color: #F00;
+}
+
+#artist .smark {
+	color: #A3D89A;
+	padding: 0 3px 0 0;
+}
+
+
+.cpT {
+    width: 685px;
+	margin: 0 0 0 5px;
+    padding: 0 5px;
+    overflow: hidden;
+    _zoom: 1;
+}
+.cpO {
+	padding: 6px 0 6px 3px;
+	width: 680px;
+	border-bottom: 1px dotted #CCC;
+}
+.cp1 {
+	width: 590px;
+	float:left;
+	padding:7px 0 0 0;
+}
+
+
+#artist .pdflink {
+    width: 670px;
+	margin: 10px auto;
+    padding: 15px 5px 4px 10px;
+    overflow: hidden;
+    _zoom: 1;
+	font-size: 93%;
+	border: 1px solid #cecece;
+}
+#artist .pdflink li {
+	float: left;
+	padding: 0 23px 10px 23px;
+	background: url(../images/_share/ico_pdf.gif) no-repeat 0 0;
+}
+
+
+
+
+#artist #profile {
+	margin: 15px auto;
+    overflow: hidden;
+    _zoom: 1;
+	font-size: 93%;
+}
+#artist #profile #profilebox {
+    width: 450px;
+	margin: 0 auto;
+	background: #fff;
+    overflow: hidden;
+    _zoom: 1;
+}
+#artist #profile #profilename {
+    width: 450px;
+	height: 33px;
+	margin: 0 auto;
+    padding: 12px 0 0 10px;
+    overflow: hidden;
+    _zoom: 1;
+	background: url(../images/_share/title_bg.jpg) no-repeat;
+	font-weight: bold;
+	font-size: 14px;
+}
+#artist #profile .data {
+	padding: 5px 0;
+    overflow: hidden;
+    _zoom: 1;
+}
+#artist #profile #profilebox .data dl {
+    width: 450px;
+	margin: 0 0 10px 0;
+	padding: 0 0 5px 0;
+    overflow: hidden;
+    _zoom: 1;
+	border-bottom: 1px dotted #CCC;
+}
+#artist #profile #profilebox .data dl dt {
+	float: left;
+	width: 110px;
+	margin: 0 0 0 5px;
+	padding: 3px 0 0 0;
+	text-indent: 1px;
+	font-weight: bold;
+}
+#artist #profile #profilebox .data dl dd {
+	padding: 3px 0 0 125px;
+}
+#artist #profile #profilebox .close {
+	text-align: center;
+	padding: 10px 0 20px 0;
+}
+#artist #profile #profilebox .data ul {
+	width: 300px;
+	margin: 0 auto;
+    padding: 0 0 7px 0;
+    overflow: hidden;
+    _zoom: 1;
+}
+#artist #profile #profilebox .data li {
+	float: left;
+}
+#artist #profile #profilebox .data .year {
+	width: 80px;
+}
+#artist #profile #profilebox .data .protxt{
+	width: 200px;
+}

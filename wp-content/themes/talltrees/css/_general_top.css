@@ -1,0 +1,1325 @@
+@charset "UTF-8";
+@import url(font.css);
+/* category
+----------------------------*/
+.hall_list .category {
+  position: relative;
+  margin-bottom: 40px;
+}
+.hall_list .category .category_block {
+  float: left;
+  width: 228px;
+  height: 182px;
+  margin-left: 20px;
+  border-radius: 5px;
+  border: solid 1px #e0e0e0;
+  background-color: #eee;
+  transition: .3s ease-out;
+}
+.hall_list .category dl {
+  float: left;
+  width: 228px;
+  height: 175px;
+  padding-top: 7px;
+  border-radius: 5px;
+  transition: .3s ease-out;
+}
+.hall_list .category .info {
+  background-image: url(../images/category1.png);
+}
+.hall_list .category .access {
+  background-image: url(../images/category2.png);
+}
+.hall_list .category .how_to {
+  background-image: url(../images/category3.png);
+}
+.hall_list .category .price {
+  background-image: url(../images/category4.png);
+}
+.hall_list .category .tochigi {
+  background-image: url(../images/category_h1.png);
+}
+.hall_list .category .ohira {
+  background-image: url(../images/category_h2.png);
+}
+.hall_list .category .fujioka {
+  background-image: url(../images/category_h3.png);
+}
+.hall_list .category .tsuga {
+  background-image: url(../images/category_h4.png);
+}
+.hall_list .category .category_block:first-child {
+  margin-left: 0;
+}
+.hall_list .category dl:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.hall_list .category dl:hover dd a.arrow:hover {
+  color: white !important;
+}
+.hall_list .category dl:hover dd a.arrow:hover:after {
+  background-color: white !important;
+}
+.hall_list .category .tochigi dl:hover {
+  background-color: rgba(79, 147, 240, 0.5);
+}
+.hall_list .category .tochigi dl:hover dt a {
+  color: #4f93f0;
+}
+.hall_list .category .tochigi dl:hover dt a:after {
+  background-color: #4f93f0;
+}
+.hall_list .category .tochigi dt a.arrow:hover {
+  color: #4f93f0 !important;
+}
+.hall_list .category .tochigi dt a.arrow:hover:after {
+  background-color: #4f93f0 !important;
+}
+.hall_list .category .ohira dl:hover {
+  background-color: rgba(51, 183, 147, 0.7);
+}
+.hall_list .category .ohira dl:hover dt a {
+  color: #33b793;
+}
+.hall_list .category .ohira dl:hover dt a:after {
+  background-color: #33b793;
+}
+.hall_list .category .ohira dt a.arrow:hover {
+  color: #33b793 !important;
+}
+.hall_list .category .ohira dt a.arrow:hover:after {
+  background-color: #33b793 !important;
+}
+.hall_list .category .fujioka dl:hover {
+  background-color: rgba(232, 127, 172, 0.7);
+}
+.hall_list .category .fujioka dl:hover dt a {
+  color: #e87fac;
+}
+.hall_list .category .fujioka dl:hover dt a:after {
+  background-color: #e87fac;
+}
+.hall_list .category .fujioka dt a.arrow:hover {
+  color: #e87fac !important;
+}
+.hall_list .category .fujioka dt a.arrow:hover:after {
+  background-color: #e87fac !important;
+}
+.hall_list .category .tsuga dl:hover {
+  background-color: rgba(159, 131, 211, 0.5);
+}
+.hall_list .category .tsuga dl:hover dt a {
+  color: #9f83d3;
+}
+.hall_list .category .tsuga dl:hover dt a:after {
+  background-color: #9f83d3;
+}
+.hall_list .category .tsuga dt a.arrow:hover {
+  color: #9f83d3 !important;
+}
+.hall_list .category .tsuga dt a.arrow:hover:after {
+  background-color: #9f83d3 !important;
+}
+.hall_list .category dl dt {
+  position: absolute;
+  bottom: 1px;
+  width: 228px;
+  padding: 13px 0;
+  border-radius: 0 0 4px 4px;
+  text-indent: 16px;
+  font-size: 13px;
+  font-weight: bold;
+  background: #f8f8f8;
+}
+.hall_list .category dl dd {
+  opacity: 0;
+  margin: 12px 0 0 19px;
+  transition: .3s ease-out;
+}
+.hall_list .category dl:hover dd {
+  opacity: 1;
+}
+.hall_list .category dl dd a {
+  color: #fff;
+  text-decoration: none;
+}
+.hall_list .category dl dd a:hover {
+  text-decoration: underline;
+}
+.hall_list .category dl dd a:after {
+  background-color: #fff;
+  background-image: url(../images/arrow_black.png);
+}
+
+/* right_column
+----------------------------*/
+.event_list_wrapper {
+  width: 716px;
+  overflow: hidden;
+  position: relative;
+}
+.event_list_wrapper h2 {
+  margin: 0 0 35px;
+  border: 0;
+  background: none;
+}
+.event_list_wrapper h2.no_tabs {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.event_list_wrapper ul {
+  margin-bottom: 0;
+}
+.event_list_wrapper ul li h3 a {
+  font-size: 12px;
+}
+.event_list_wrapper ul.sort_list {
+  width: 746px;
+}
+.event_list_wrapper ul.sort_list li {
+  float: left;
+  margin-right: 30px;
+}
+.event_list_wrapper .moreLink {
+  margin: 15px 15px 10px;
+}
+
+.notice_container {
+  position: relative;
+  overflow: hidden;
+  min-height: 211px;
+  margin: 20px 0 0;
+}
+.notice_container .notice_timeline {
+  position: relative;
+  margin-top: -69px;
+}
+.notice_container .fb-page {
+  margin: 0 auto !important;
+}
+.notice_container iframe {
+  width: 700px !important;
+}
+
+/* left_column
+----------------------------*/
+/* secondary
+----------------------------*/
+.secondary .sideHallInfo {
+  display: block !important;
+}
+
+/* 総合TOPのみ
+------------------------------------*/
+.home .primary {
+  padding-top: 0;
+}
+.home .right_column {
+  width: 716px;
+  margin-bottom: 45px;
+}
+.home .contentWrapper {
+  padding: 35px 0 0;
+}
+.home .indexKeyImage {
+  position: relative;
+  width: 1250px;
+  margin: 0 auto;
+  z-index: 10;
+  height: 454px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.home .indexKeyImage .keyImageSlider img {
+  top: 0 !important;
+}
+.home .indexKeyImage .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.home .indexKeyImage .content_inner {
+  position: relative;
+  padding: 0;
+  height: 454px;
+}
+.home .indexKeyImage > .content_inner {
+  position: absolute;
+  top: 0;
+  left: 135px;
+  z-index: 2;
+}
+.home .indexKeyImage .hallName {
+  position: absolute;
+  top: 312px;
+  left: 0;
+  width: 447px;
+  height: 61px;
+  text-indent: -9999px;
+  background: url('../images/common/main-copy.png?1457445812') top center no-repeat;
+}
+.home .indexKeyImage .gNav {
+  width: 100%;
+  position: absolute;
+  bottom: -42px;
+  left: 0;
+  z-index: 30;
+}
+.home .indexKeyImage .gNav .content_inner {
+  height: auto !important;
+}
+.home .pickupArea {
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  bottom: 56px;
+  width: 255px;
+  font-family: "SourceHanSans-Regular", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, sans-serif;
+}
+.home .pickupArea .pickupSlider {
+  height: auto !important;
+  overflow: hidden;
+}
+.home .pickupArea .pickupSlider li {
+  display: block;
+  width: 245px !important;
+  margin: 10px 20px 0 11px !important;
+  background: rgba(255, 255, 255, 0.9);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.home .pickupArea .pickupSlider li:hover {
+  background: #fff;
+}
+.home .pickupArea .pickupSlider a {
+  text-decoration: none;
+}
+.home .pickupArea .label {
+  position: absolute;
+  top: -10px;
+  left: -11px;
+  text-indent: -9999px;
+  z-index: 100;
+  width: 133px;
+  height: 48px;
+}
+.home .pickupArea .label-upcomming {
+  background: url('../images/common/label-upcomming.png?1457445751') left top no-repeat;
+}
+.home .pickupArea .label-pickup {
+  background: url('../images/common/label-pickup.png?1457666104') left top no-repeat;
+}
+.home .pickupArea .thumb {
+  position: relative;
+  text-align: center;
+  max-height: 182px;
+  z-index: 90;
+  background: #fff;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+.home .pickupArea .thumb img {
+  vertical-align: top;
+}
+.home .pickupArea .detail {
+  padding: 12px 14px;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0;
+  border-radius: 0 0 5px 5px;
+}
+.home .pickupArea .catchCopy {
+  margin: 0 0 10px;
+}
+.home .pickupArea .catchCopy, .home .pickupArea .eventTitle {
+  padding: 0 5px;
+}
+.home .pickupArea .eventTitle {
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  font-size: 1.6rem;
+  font-family: "SourceHanSans-Bold", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+.home .pickupArea .date {
+  float: left;
+}
+.home .pickupArea .status {
+  text-align: right;
+  float: right;
+}
+.home .pickupArea .status span {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 3px 7px 4px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.home .pickupArea .controls {
+  display: block;
+  position: absolute;
+  top: -8px;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+}
+.home .pickupArea .numericControls {
+  font-size: 1rem;
+  text-align: right;
+}
+.home .pickupArea .numericControls li {
+  display: inline-block;
+  margin-left: 4px;
+}
+.home .pickupArea .numericControls li a {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #666;
+  text-indent: -9999px;
+  text-align: left;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.home .pickupArea .numericControls li.current a {
+  background: #e2728f;
+}
+.home .pickupArea a:hover img {
+  opacity: 0.9;
+}
+.home .pickupArea .tag-ticket {
+  border: 1px solid #008bcc;
+  background: #008bcc;
+  color: white;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.home .pickupArea .tag-wanted, .home .pickupArea .tag-upcoming {
+  border-color: #f2c70b;
+  background: #f2c70b;
+}
+.home .pickupArea .tag-soldout, .home .pickupArea .tag-closed, .home .pickupArea .tag-reservation_closed, .home .pickupArea .tag-free {
+  border-color: #ccc;
+  background: #ccc;
+}
+.home .pickupArea .tag-deminimis {
+  border-color: #cc0000;
+  background: #cc0000;
+}
+.home .homeMenu {
+  position: relative;
+  z-index: 0;
+  max-width: 1250px;
+  min-width: 980px;
+  margin: 0 auto;
+  padding: 50px 0 40px;
+  background: rgba(255, 255, 255, 0.5);
+  background-size: contain;
+  overflow: hidden;
+}
+.home .menuPanels h2 {
+  padding: 0 0 0 20px;
+  min-height: 16px;
+  font-family: "SourceHanSans-Bold", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, sans-serif;
+  font-size: 1.6rem;
+  background: url('../images/common/icn-beginner.png?1457446914') left 6px no-repeat;
+}
+.home #menuSlider {
+  opacity: 0;
+  max-height: 193px;
+}
+.home .menuSlider {
+  margin: 23px 0 0;
+  position: relative;
+}
+.home .menuSlider .thumb {
+  margin: 0 0 5px;
+  padding: 0 0 13px;
+  background: url('../images/common/shadow-slide.png?1457446831') bottom center no-repeat;
+}
+.home .menuSlider .thumb img {
+  vertical-align: top;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.home .menuSlider .thumb a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.home .menuSlider .thumb a:hover img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+}
+.home .menuSlider a {
+  font-family: "SourceHanSans-Bold", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, sans-serif;
+  text-decoration: none;
+}
+.home .menuSliderControls, .home .owl-nav {
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+}
+.home .menuSliderControls div, .home .owl-nav div {
+  position: absolute;
+  top: 58px;
+  left: 82px;
+  width: 40px;
+  height: 41px;
+  text-indent: -9999px;
+  background: url('../images/common/arw-slider-prev.png?1457446784') left top no-repeat;
+}
+.home .menuSliderControls div.owl-next, .home .owl-nav div.owl-next {
+  left: 1128px;
+  background-image: url('../images/common/arw-slider-next.png?1457446784');
+}
+.home .indexPickup {
+  display: none;
+}
+.home .sideHallInfo {
+  display: none;
+}
+.home .right_column {
+  padding-top: 0;
+}
+.home .right_column .hallInfo {
+  display: block;
+}
+.home .right_column h2 {
+  padding-left: 15px;
+  padding-bottom: 6px;
+  background: none !important;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.home .right_column h2:after {
+  left: 0;
+  top: 9px;
+  margin-top: 0;
+}
+.home .right_column .event_list {
+  margin: 30px 0 0;
+}
+.home .right_column .event_list span.tag {
+  margin-bottom: 0;
+}
+.home .right_column .event_calendar h3 {
+  margin: 0 0 5px;
+  padding: 0;
+  font-size: 15px;
+  border: 0;
+}
+.home .right_column .event_calendar .calendar_link {
+  margin: 0 12px 20px;
+}
+.home .right_column .event_calendar .calendar_link:last-child {
+  margin-bottom: 0;
+}
+.home .right_column .event_calendar .calendar_link li {
+  display: inline-block;
+  margin-right: 0;
+  min-width: 49%;
+}
+.home .right_column .event_calendar .calendar_link li a {
+  font-size: 13px;
+}
+.home .right_column .cultureArea {
+  padding-bottom: 10px;
+}
+.home .right_column .culture_list .timesNum {
+  margin: 0 0 7px;
+  line-height: 1;
+}
+.home .right_column .culture_list .timesNum p {
+  margin-bottom: 0;
+}
+.home .right_column .culture_list h3 {
+  margin-bottom: 10px;
+}
+.home .right_column .culture_list p {
+  margin: 0 0 15px;
+}
+.home .notice {
+  padding-bottom: 45px;
+}
+.home .notice h2 {
+  padding-bottom: 12px;
+  background: none;
+  border-bottom: 1px solid #e6e6e6;
+}
+.home .info_wall {
+  max-height: 195px;
+  height: auto;
+  margin: 20px 0 0;
+  padding-bottom: 20px;
+  overflow: hidden;
+  border-bottom: 1px solid #e6e6e6;
+}
+.home .info_list li, .home .info_list p {
+  font-size: 1.2rem;
+}
+.home .info_list li a, .home .info_list p a {
+  font-size: 1.2rem;
+}
+.home .update_list li {
+  padding: 2px 0;
+}
+.home .update_list .meta_block {
+  width: 130px;
+  padding: 0;
+}
+.home .update_list p {
+  width: 580px;
+}
+.home .hallInfo .thumb {
+  width: 100px;
+}
+.home .hallInfo .detail {
+  width: 185px;
+}
+.home .hallInfo a {
+  text-decoration: none;
+}
+.home .hallInfo h3 {
+  font-size: 1.6rem;
+  border-color: #ccc;
+}
+.home .hallInfo li {
+  min-width: 78px;
+  float: left;
+}
+.home .hallInfo li a:hover {
+  text-decoration: underline;
+}
+.home .hallInfo .colorPanel:last-of-type li {
+  float: none;
+}
+
+.home #foot,
+.page-template-default #foot {
+  background: #f2f2f2;
+}
+
+.no_recommend_footer {
+  margin-top: 30px;
+  background: #f2f2f2 !important;
+}
+
+.win .home .menuPanels h2 {
+  font-family: "SourceHanSans-Medium", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, sans-serif;
+}
+.win .home .menuSlider a {
+  font-family: "SourceHanSans-Medium", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, sans-serif;
+}
+
+/* 767以下
+---------------------------------------------------------------------------------- */
+@media screen and (max-width: 767px) {
+  .hall_list .category {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .hall_list .category .category_block {
+    float: left;
+    width: 228px;
+    height: 182px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: solid 1px #e0e0e0;
+    background-color: #eee;
+    transition: .3s ease-out;
+  }
+  .hall_list .category dl {
+    float: left;
+    width: 228px;
+    height: 175px;
+    padding-top: 7px;
+    border-radius: 5px;
+    transition: .3s ease-out;
+  }
+  .hall_list .category .info {
+    background-image: url(../images/category1.png);
+  }
+  .hall_list .category .access {
+    background-image: url(../images/category2.png);
+  }
+  .hall_list .category .how_to {
+    background-image: url(../images/category3.png);
+  }
+  .hall_list .category .price {
+    background-image: url(../images/category4.png);
+  }
+  .hall_list .category .tochigi {
+    background-image: url(../images/category_h1.png);
+  }
+  .hall_list .category .ohira {
+    background-image: url(../images/category_h2.png);
+  }
+  .hall_list .category .fujioka {
+    background-image: url(../images/category_h3.png);
+  }
+  .hall_list .category .tsuga {
+    background-image: url(../images/category_h4.png);
+  }
+  .hall_list .category .category_block:first-child {
+    margin-left: 0;
+  }
+  .hall_list .category dl:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .hall_list .category dl:hover dd a.arrow:hover {
+    color: white !important;
+  }
+  .hall_list .category dl:hover dd a.arrow:hover:after {
+    background-color: white !important;
+  }
+  .hall_list .category .tochigi dl:hover {
+    background-color: rgba(79, 147, 240, 0.5);
+  }
+  .hall_list .category .tochigi dl:hover dt a {
+    color: #4f93f0;
+  }
+  .hall_list .category .tochigi dl:hover dt a:after {
+    background-color: #4f93f0;
+  }
+  .hall_list .category .tochigi dt a.arrow:hover {
+    color: #4f93f0 !important;
+  }
+  .hall_list .category .tochigi dt a.arrow:hover:after {
+    background-color: #4f93f0 !important;
+  }
+  .hall_list .category .ohira dl:hover {
+    background-color: rgba(51, 183, 147, 0.7);
+  }
+  .hall_list .category .ohira dl:hover dt a {
+    color: #33b793;
+  }
+  .hall_list .category .ohira dl:hover dt a:after {
+    background-color: #33b793;
+  }
+  .hall_list .category .ohira dt a.arrow:hover {
+    color: #33b793 !important;
+  }
+  .hall_list .category .ohira dt a.arrow:hover:after {
+    background-color: #33b793 !important;
+  }
+  .hall_list .category .fujioka dl:hover {
+    background-color: rgba(232, 127, 172, 0.7);
+  }
+  .hall_list .category .fujioka dl:hover dt a {
+    color: #e87fac;
+  }
+  .hall_list .category .fujioka dl:hover dt a:after {
+    background-color: #e87fac;
+  }
+  .hall_list .category .fujioka dt a.arrow:hover {
+    color: #e87fac !important;
+  }
+  .hall_list .category .fujioka dt a.arrow:hover:after {
+    background-color: #e87fac !important;
+  }
+  .hall_list .category .tsuga dl:hover {
+    background-color: rgba(159, 131, 211, 0.5);
+  }
+  .hall_list .category .tsuga dl:hover dt a {
+    color: #9f83d3;
+  }
+  .hall_list .category .tsuga dl:hover dt a:after {
+    background-color: #9f83d3;
+  }
+  .hall_list .category .tsuga dt a.arrow:hover {
+    color: #9f83d3 !important;
+  }
+  .hall_list .category .tsuga dt a.arrow:hover:after {
+    background-color: #9f83d3 !important;
+  }
+  .hall_list .category dl dt {
+    position: absolute;
+    bottom: 1px;
+    width: 228px;
+    padding: 13px 0;
+    border-radius: 0 0 4px 4px;
+    text-indent: 16px;
+    font-size: 13px;
+    font-weight: bold;
+    background: #f8f8f8;
+  }
+  .hall_list .category dl dd {
+    opacity: 0;
+    margin: 12px 0 0 19px;
+    transition: .3s ease-out;
+  }
+  .hall_list .category dl:hover dd {
+    opacity: 1;
+  }
+  .hall_list .category dl dd a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .hall_list .category dl dd a:hover {
+    text-decoration: underline;
+  }
+  .hall_list .category dl dd a:after {
+    background-color: #fff;
+    background-image: url(../images/arrow_black.png);
+  }
+
+  /* right_column
+  ----------------------------*/
+  .event_list_wrapper {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px !important;
+    overflow: inherit;
+    position: relative;
+    background: #ffdbe4;
+  }
+  .event_list_wrapper h2 {
+    margin: 0 0 35px;
+    border: 0;
+    background: none;
+  }
+  .event_list_wrapper h2.no_tabs {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .event_list_wrapper ul {
+    margin-bottom: 0;
+  }
+  .event_list_wrapper ul li h3 a {
+    font-size: 12px;
+  }
+  .event_list_wrapper ul.sort_list {
+    width: 100%;
+  }
+  .event_list_wrapper ul.sort_list li {
+    padding: 15px 15px 10px;
+    float: none;
+    margin-right: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  .notice_container {
+    position: relative;
+    overflow: hidden;
+    min-height: 211px;
+    margin: 20px 0 0;
+  }
+  .notice_container .notice_timeline {
+    position: relative;
+    margin-top: -69px;
+  }
+  .notice_container .fb-page {
+    margin: 0 auto !important;
+  }
+  .notice_container iframe {
+    width: 700px !important;
+  }
+
+  /* left_column
+  ----------------------------*/
+  /* secondary
+  ----------------------------*/
+  .secondary .sideHallInfo {
+    display: none !important;
+  }
+
+  /* 総合TOPのみ
+  ------------------------------------*/
+  .home .header {
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+  }
+  .home .header:before, .home .header:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+    -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+  }
+  .home .header:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+  }
+  .home .right_column {
+    float: none;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .home .contentWrapper {
+    padding: 0;
+  }
+  .home .indexKeyImage {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .home .indexKeyImage .bgstretcher-page {
+    width: 100%;
+    height: 100%;
+  }
+  .home .indexKeyImage li img {
+    width: auto !important;
+    height: 100% !important;
+    margin-left: 0 !important;
+  }
+  .home .indexKeyImage .shadow {
+    display: none;
+  }
+  .home .indexKeyImage .content_inner {
+    height: 100%;
+    left: inherit;
+  }
+  .home .indexKeyImage .hallName {
+    position: absolute;
+    top: 72%;
+    left: 5%;
+    width: calc( 100% * 0.698 );
+    height: calc( 100% * 0.185 );
+    text-indent: -9999px;
+    background: url('../images/common/main-copy.png?1457445812') top center no-repeat;
+    background-size: 100% auto;
+  }
+  .home .indexKeyImage .gNav {
+    width: 100%;
+    position: absolute;
+    bottom: -42px;
+    left: 0;
+    z-index: 30;
+  }
+  .home .indexKeyImage .gNav .content_inner {
+    height: auto !important;
+  }
+  .home .indexKeyImage .pickupArea {
+    display: none;
+  }
+  .home .homeMenu {
+    position: relative;
+    z-index: 0;
+    max-width: 100%;
+    min-width: inherit;
+    margin: 0 auto;
+    padding: 20px 0;
+    background: url('../images/common/sp/bg-menuslider.jpg?1458631219') top center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+  .home .menuPanels h2 {
+    background: none;
+    text-align: center;
+  }
+  .home .menuPanels h2 span {
+    display: inline-block;
+    position: relative;
+  }
+  .home .menuPanels h2 span:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    content: '';
+    display: inline-block;
+    margin-left: -16.66667px;
+    margin-top: -6.25px;
+    width: 12.5px;
+    height: 15px;
+    background: url('../images/common/sp/icn-beginner.png?1457448072') left center no-repeat;
+    background-size: 12.5px auto;
+    font-size: 1.6rem;
+  }
+  .home .menuSlider {
+    margin: 0;
+    padding: 0;
+  }
+  .home .menuSlider .thumb {
+    padding-bottom: 11.2px;
+    background-size: 98% auto;
+  }
+  .home .owl-stage-outer {
+    position: relative;
+    padding: 40px 0 0;
+  }
+  .home .owl-item {
+    text-align: center;
+  }
+  .home .owl-item .arrow {
+    left: -8px;
+  }
+  .home .owl-dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .home .indexPickup {
+    display: block;
+    background: #fff;
+    padding: 25px 0 0;
+  }
+  .home .indexPickup .pickupArea {
+    position: relative;
+    right: inherit;
+    bottom: inherit;
+    margin: 0 auto;
+    width: 95% !important;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  .home .indexPickup .pickupArea .indexPickupSlider {
+    height: auto !important;
+  }
+  .home .indexPickup .pickupArea .indexPickupSlider li {
+    display: block;
+    padding-bottom: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  .home .indexPickup .pickupArea .indexPickupSlider a {
+    display: block;
+    text-decoration: none;
+    background: url('../images/common/sp/shadow-panel.png?1458637972') bottom center no-repeat;
+    background-size: 97% auto;
+    padding: 0 6px 7px;
+  }
+  .home .indexPickup .pickupArea .panelWrapper {
+    position: relative;
+    padding: 12px 10px 12px 12px;
+    background: #fcf1dc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  .home .indexPickup .pickupArea .label {
+    top: 7px;
+    left: -6px;
+    width: 92.77778px;
+    height: 26.66667px;
+  }
+  .home .indexPickup .pickupArea .label-upcomming {
+    background: url('../images/common/sp/label-upcomming.png?1457448094') left top no-repeat;
+    background-size: 92.77778px auto;
+  }
+  .home .indexPickup .pickupArea .label-pickup {
+    background: url('../images/common/sp/label-pickup.png?1458635480') left top no-repeat;
+    background-size: 92.77778px auto;
+  }
+  .home .indexPickup .pickupArea .thumb {
+    float: left;
+    max-height: inherit;
+    width: 43%;
+    height: 110px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
+  .home .indexPickup .pickupArea .thumb img {
+    max-width: 100%;
+  }
+  .home .indexPickup .pickupArea .detail {
+    float: right;
+    width: 54%;
+    padding: 0;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0;
+    border-radius: 0 0 5px 5px;
+  }
+  .home .indexPickup .pickupArea .catchCopy {
+    margin: 0 0 3px;
+    font-size: 1rem;
+  }
+  .home .indexPickup .pickupArea .catchCopy, .home .indexPickup .pickupArea .eventTitle {
+    padding: 0;
+  }
+  .home .indexPickup .pickupArea .eventTitle {
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+    font-size: 1.2rem;
+    font-family: "SourceHanSans-Bold", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, sans-serif;
+    border-bottom: 1px solid #ccc;
+  }
+  .home .indexPickup .pickupArea .date {
+    float: none;
+    font-size: 1.2rem;
+    margin-bottom: 3px;
+  }
+  .home .indexPickup .pickupArea .status {
+    text-align: left;
+    float: none;
+  }
+  .home .sideHallInfo {
+    display: block;
+    padding: 20px 15px;
+    background: #fff;
+  }
+  .home .sideHallInfo .side_block h2 {
+    background: none;
+    text-align: center;
+  }
+  .home .sideHallInfo .side_block h2 span {
+    position: relative;
+  }
+  .home .sideHallInfo .side_block h2 span:before {
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    content: '';
+  }
+  .home .sideHallInfo .detail {
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  .home .sideHallInfo .hoursArea p {
+    padding: 8px 0;
+    font-size: 1.4rem;
+  }
+  .home .sideHallInfo .hoursArea h2 span:before {
+    left: -19.33333px;
+    margin-top: -7.25px;
+    width: 14.5px;
+    height: 14.5px;
+    background: url('../images/common/sp/icn-time.png?1457448017') left center no-repeat;
+    background-size: 14.5px auto;
+  }
+  .home .sideHallInfo .closedDays {
+    padding-top: 12px;
+    margin-bottom: 0;
+  }
+  .home .sideHallInfo .closedDays h2 span:before {
+    left: -20.71429px;
+    margin-top: -8.28571px;
+    width: 17.05882px;
+    height: 17.05882px;
+    background: url('../images/common/sp/icn-side-close.png?1458639983') left center no-repeat;
+    background-size: 17.05882px auto;
+  }
+  .home .right_column {
+    padding-top: 0;
+  }
+  .home .right_column section {
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  .home .right_column h2 {
+    padding-left: 15px;
+    padding-bottom: 6px;
+    background: none !important;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
+  .home .right_column h2:after {
+    left: 0;
+    top: 9px;
+    margin-top: 0;
+  }
+  .home .right_column .event_list {
+    margin: 0;
+    padding: 10px 0;
+    background: #fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+  }
+  .home .right_column .event_list li {
+    margin: 0;
+  }
+  .home .right_column .event_list span.tag {
+    margin-bottom: 0;
+  }
+  .home .right_column .event_calendar h3 {
+    margin: 0 0 5px;
+    padding: 0;
+    font-size: 15px;
+    border: 0;
+  }
+  .home .right_column .event_calendar .calendar_link {
+    margin: 0 12px 20px;
+  }
+  .home .right_column .event_calendar .calendar_link:last-child {
+    margin-bottom: 0;
+  }
+  .home .right_column .event_calendar .calendar_link li {
+    display: inline-block;
+    margin-right: 0;
+    min-width: 49%;
+  }
+  .home .right_column .event_calendar .calendar_link li a {
+    font-size: 13px;
+  }
+  .home .right_column .cultureArea {
+    padding-top: 20px;
+    padding-bottom: 10px !important;
+  }
+  .home .right_column .cultureArea .moreLink {
+    margin: 0 0 15px;
+  }
+  .home .right_column .culture_list {
+    padding-bottom: 0;
+  }
+  .home .right_column .culture_list .timesNum {
+    margin: 0 0 5px;
+    line-height: 1;
+  }
+  .home .right_column .culture_list .timesNum p {
+    margin-bottom: 0;
+  }
+  .home .right_column .culture_list h3 {
+    padding-bottom: 7px;
+    margin-bottom: 0px;
+    border-bottom: 0;
+  }
+  .home .right_column .culture_list p {
+    margin: 0 0 12px;
+  }
+  .home .right_column .culture_list li {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .home .notice {
+    padding-bottom: 25px !important;
+  }
+  .home .notice h2 {
+    padding-bottom: 12px;
+    background: none;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .home .info_wall {
+    max-height: 195px;
+    height: auto;
+    margin: 12px 0 0;
+    padding-bottom: 15px;
+    overflow: hidden;
+    border-bottom: 0px;
+  }
+  .home .info_list li, .home .info_list p {
+    font-size: 1.2rem;
+  }
+  .home .info_list li a, .home .info_list p a {
+    font-size: 1.2rem;
+  }
+  .home .update_list {
+    padding-top: 20px;
+    padding-bottom: 30px !important;
+    background: #ffedf1;
+  }
+  .home .update_list li {
+    padding: 2px 0;
+  }
+  .home .update_list .meta_block {
+    width: 100%;
+    padding: 0;
+  }
+  .home .update_list p {
+    width: 100%;
+  }
+  .home .update_list .moreLink {
+    margin: 20px 0 0;
+  }
+  .home .hallInfo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .home .hallInfo .thumb {
+    width: 35%;
+  }
+  .home .hallInfo .thumb img {
+    width: 100%;
+  }
+  .home .hallInfo .detail {
+    width: 60%;
+  }
+  .home .hallInfo a {
+    text-decoration: none;
+  }
+  .home .hallInfo h3 {
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    font-size: 1.4rem;
+    border-color: #ccc;
+    line-height: 1;
+  }
+  .home .hallInfo li {
+    min-width: 50%;
+    float: left;
+    font-size: 1.1rem;
+  }
+  .home .hallInfo li a:hover {
+    text-decoration: underline;
+  }
+  .home .hallInfo .colorPanel {
+    padding: 15px;
+  }
+  .home .hallInfo .colorPanel:last-of-type {
+    margin-top: 20px;
+  }
+  .home .hallInfo .colorPanel:last-of-type li {
+    float: none;
+  }
+
+  .home #foot,
+  .page-template-default #foot {
+    background: #f2f2f2;
+  }
+
+  .no_recommend_footer {
+    margin-top: 30px;
+    background: #f2f2f2 !important;
+  }
+
+  .win .home .menuPanels h2 {
+    font-family: "SourceHanSans-Medium", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, sans-serif;
+  }
+  .win .home .menuSlider a {
+    font-family: "SourceHanSans-Medium", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, sans-serif;
+  }
+}
+/* 480以下
+---------------------------------------------------------------------------------- */

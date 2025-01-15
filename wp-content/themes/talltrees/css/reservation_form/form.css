@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/*-------------------------------------
+
+■ file name: form.css
+■ file about: フォーム専用スタイル
+■ last update: 2010/08/01
+■ style index:
+
+-------------------------------------*/
+
+/* ---------------------------
+文字サイズ :
+--------------------------- */
+.right {text-align:right;}
+.center {text-align:center;}
+
+.small {font-size:10px;line-height:1.5em;}
+.large {font-size:14px;}
+.bsmall {font-size:10px;font-weight:bold;}
+.blarge {font-size:14px;font-weight:bold;}
+.bold {font-weight:bold;}
+.ex {color:#AAA;}
+.red {color:#C00;font-weight:bold;}
+.pink {color:#F5BFD7;}
+.ugray {color: #C0C0C0;}
+
+h2 {margin:0 0 20px 0;font-size:18px;}
+h2.tit {height:60px;margin:0;text-indent:-9999px;}
+h3 {margin:0 0 10px 0;font-size:16px;}
+h4 {margin:0 0 5px 0;font-size:14px;}
+h5 {font-size:12px;}
+
+.point {color:#FC0;}
+.bpoint {color:#780001;font-weight:bold;}
+.spoint {color:#780001;font-size:10px;}
+
+.dotbox {border:1px dotted #CCC;}
+.graybox {border:1px solid #DDD;background:#F0F0F0;padding:4px 6px;}
+.graybox2 {background:#F0F0F0;padding:20px;}
+
+.sp {margin-bottom:0.5em;}
+.sp1 {margin-bottom:1em;}
+.sp2 {margin-bottom:2em;}
+.sp3 {margin-bottom:3em;}
+.sp4 {margin-bottom:4em;}
+
+img.vm {vertical-align:middle;}

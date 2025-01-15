@@ -1,0 +1,39 @@
+// -------------------------------------
+// mixin
+// -------------------------------------
+
+  //box-sizing
+  $prefixList : null, -webkit-, -moz-;
+  @mixin box_sizing {
+    @each $prefix in $prefixList{
+      #{$prefix}box-sizing: border-box;
+    }
+  }
+
+  //keyframes
+  @mixin keyframes( $name ) {
+    @keyframes #{$name} {
+      @content;
+    }
+    @-webkit-keyframes #{$name} {
+      @content;
+    }
+    @-moz-keyframes #{$name} {
+      @content;
+    }
+    @-ms-keyframes #{$name} {
+      @content;
+    }
+  }
+
+  @mixin keyframes_excepted_safari($name) {
+    @keyframes #{$name} {
+      @content;
+    }
+    @-moz-keyframes #{$name} {
+      @content;
+    }
+    @-ms-keyframes #{$name} {
+      @content;
+    }
+  }
